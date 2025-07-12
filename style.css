@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -11,14 +12,14 @@ body, html {
 .bg-image {
   /* The image used */
   background-image: url("images/background\ png.png");
-  
+
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
-  
+
   /* Full height */
-  height: 100%; 
-  
+  height: 100%;
+
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -27,8 +28,10 @@ body, html {
 
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -43,35 +46,52 @@ body, html {
 }
 
 
-.changecontent::after{
-  content:' ' ;
+.changecontent::after {
+  content: ' ';
   margin-top: 10px;
-  color:#ddd429;
+  color: #ddd429;
   font-family: 'Love Ya Like A Sister', cursive;
   text-shadow: 1px 2px 2px black;
   animation: changetext 20s infinite linear;
-  
+
 
 }
+
 @keyframes changetext {
- 0%{content: "Ankle Strap Heels";}
- 10%{content: "Kitten Heels";}
- 20%{content: "Pump Heels";}
- 30%{content: "Chunky Heels";}
- 40%{content: "Plateform Heels";}
+  0% {
+    content: "Ankle Strap Heels";
+  }
+
+  10% {
+    content: "Kitten Heels";
+  }
+
+  20% {
+    content: "Pump Heels";
+  }
+
+  30% {
+    content: "Chunky Heels";
+  }
+
+  40% {
+    content: "Plateform Heels";
+  }
 }
- 
- /*about*/
- .zoom {
+
+/*about*/
+.zoom {
   padding: 50px;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -83,12 +103,12 @@ div.scroll-container-fluid {
   padding: 10px;
 }
 
-div.scroll-container-fluid  img {
+div.scroll-container-fluid img {
   padding: 10px;
 }
 
 
-.col-lg-4{
+.col-lg-4 {
   position: relative;
   width: 50%;
 }
@@ -105,7 +125,7 @@ div.scroll-container-fluid  img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -134,13 +154,16 @@ div.scroll-container-fluid  img {
   text-align: center;
 }
 
-*,*:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body { /* For full width image-container */
+body {
+  /* For full width image-container */
   margin: 0 0 0 0;
 }
 
@@ -165,7 +188,7 @@ body { /* For full width image-container */
   left: 0;
   padding: 0 1rem 1rem;
   font-size: .9em;
-  font-family:"Helvetica";
+  font-family: "Helvetica";
   text-align: center;
   line-height: 1em;
   background-color: rgba(0, 0, 0, 0.5);
@@ -224,7 +247,8 @@ body { /* For full width image-container */
 }
 
 .zoom1:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -239,25 +263,30 @@ body {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
+  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%;
+  /* IE10 */
   flex: 25%;
 }
 
 .col-50 {
-  -ms-flex: 50%; /* IE10 */
+  -ms-flex: 50%;
+  /* IE10 */
   flex: 50%;
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
+  -ms-flex: 75%;
+  /* IE10 */
   flex: 75%;
 }
 
@@ -327,6 +356,7 @@ span.price {
   .row {
     flex-direction: column-reverse;
   }
+
   .col-25 {
     margin-bottom: 20px;
   }
